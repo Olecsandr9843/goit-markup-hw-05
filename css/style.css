@@ -507,7 +507,7 @@ h1, h2, h3, h4, h5, h6{
     fill: var(--icon-fill);
   }
 
-  .modal-overlay{
+  .modal-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -518,75 +518,147 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*opacity: 0;
-    pointer-events: none;*/
   }
-
-  /*.modal-overlay.is-open{
-    opacity: 1;
-    pointer-events: auto;
-  }*/
-
-  .modal{
+  
+  .modal {
     background-color: #fff;
     border-radius: 4px;
     width: 408px;
     min-height: 80%;
-    margin: 80px 516px 8px;
+    padding: 80px 24px;
+    position: relative;
   }
-
-.modal-close-botton{
+  
+  .modal-close-button {
     position: absolute;
     top: 24px;
     right: 24px;
-}
+    width: 24px;
+    height: 24px;
+    background: #E7E9FC;
+    border: 1px solid #0000001A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-title {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #2E2F42;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .label {
+    display: block;
+    text-align: left; 
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 8px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 4px;
+    border: 1px solid #2E2F4266;
+    font-family: Roboto;
+    font-size: 14px;
+  }
+  
+  .form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .form-textarea {
+    width: 360px;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid #2E2F4266;
+    padding: 8px 12px;
+    font-family: Roboto;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  .checkbox-field {
+    margin-top: 16px;
+  }
+  
+  .custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid #2E2F4266;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #2E2F42;
+  }
+  
+  .privacy-link {
+    text-decoration: underline;
+    color: #2E2F42;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    justify-content: space-between;
+  }
 
-.p-form{
-  width: 360px;
-  height: 24px;
+  .form-button {
+    margin-top: 24px;
+    text-align: auto;
+  }
+  
+  .submit-btn {
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  background-color: #4D5AE5;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  color: #FFFFFF;
   font-family: Roboto;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 2%;
-text-align: center;
-color: #2E2F42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
-
-/*.label-name{
-  width: 34;
-height: 14;
-font-family: Roboto;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 4%;
-color: #8E8F99;
-}*/
-
-.input-name{
-  width: 360;
-height: 40;
-margin-top: 130px;
-margin-right: 24px;
-margin-bottom: 414px;
-border-radius: 4px;
-border-width: 1px;
-color: #4D5AE5;
-}
-
-.form-label{
-  width: 34;
-  height: 14;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 4%;
-  color: #8E8F99;
-  padding:112px 350px 458px 24px;
-}
-
-.input-accept{
-  padding:464px 24px 104px;
-}
+  
