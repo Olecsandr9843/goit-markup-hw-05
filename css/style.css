@@ -518,6 +518,8 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
   }
   
   .modal {
@@ -662,3 +664,80 @@ h1, h2, h3, h4, h5, h6{
   cursor: pointer;
 }
   
+.email-footer{
+  background-color: #2E2F42;
+  width: 264;
+  height: 40;
+  top: 140px;
+  left: 828px;
+  border-radius: 4px;
+  border-width: 1px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  color: #FFFFFF;
+}
+
+.footer-container-part-three{
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-text{
+  width: 75;
+height: 24;
+top: 100px;
+left: 828px;
+font-family: Roboto;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 2%;
+color: #FFFFFF;
+}
+
+input::placeholder {
+  color: #FFFFFF;
+  width: 36;
+height: 24;
+top: 148px;
+left: 844px;
+font-family: Roboto;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+letter-spacing: 4%;
+vertical-align: middle;
+}
+
+.subscribe-button{
+  width: 165;
+height: 40;
+top: 140px;
+left: 1116px;
+border-radius: 4px;
+padding-top: 8px;
+padding-right: 24px;
+padding-bottom: 8px;
+padding-left: 24px;
+gap: 16px;
+background-color: #4D5AE5;
+color:  #FFFFFF;
+}
+
+.social-link-icon{
+  width: 24px;
+height: 20px;
+top: 2px;
+color: #FFFFFF;
+}
+
+.ss{
+  width: 77;
+height: 24;
+font-family: Roboto;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 4%;
+text-align: center;
+vertical-align: middle;
+}
